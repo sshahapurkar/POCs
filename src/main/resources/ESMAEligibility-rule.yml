@@ -1,0 +1,6 @@
+name: "Eligibility rule"
+description: "Trades which are eligible for the trading"
+priority: 1
+condition: "trade.getCountryOfOrigin().equals(\"INDIA\");"
+actions:
+  - "System.out.println(\"ELIGIBILITY: Congratulation, you \"+trade.toString()+\" are eligible for ESMA reporting\");"
